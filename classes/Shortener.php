@@ -9,8 +9,8 @@ class Shortener
 		$db = DB::getInstance();
 		// Проверка правильности ввода пользователем сокращенного URL
 		$validUserUrl = strlen($userUrl) == 6 
-							&& preg_match("/[a-zA-Z\d]{6}/", $userUrl) 
-							&& !self::shortUrlExist($userUrl);
+				&& preg_match("/[a-zA-Z\d]{6}/", $userUrl) 
+				&& !self::shortUrlExist($userUrl);
 		// Вернет false, если пользователь неправильно ввел сокращенный URL
 		if ($userUrl !== null && !$validUserUrl) {
 			return false;
