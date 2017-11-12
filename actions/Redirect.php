@@ -12,5 +12,5 @@ if ($result) {
 	header("Location: " . $row['url']);
 } else {
 	header("HTTP/1.0 404 Not Found");
-echo("Страницы не существует");
+	echo("Страницы не существует");
 }
