@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^([a-zA-Z\d]{6})$ actions/Redirect.php?r=$1 [L]
